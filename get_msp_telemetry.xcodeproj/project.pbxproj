@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FE5630291C302F5A0094EC24 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FE5630281C302F5A0094EC24 /* main.c */; };
+		FE5630341C307EB40094EC24 /* serial.c in Sources */ = {isa = PBXBuildFile; fileRef = FE5630321C307EB40094EC24 /* serial.c */; };
+		FE5630371C308C860094EC24 /* msp.c in Sources */ = {isa = PBXBuildFile; fileRef = FE5630351C308C860094EC24 /* msp.c */; };
+		FEE13C9E1C4AE5DE0057FAC1 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = FEE13C921C4AE5DE0057FAC1 /* Makefile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,24 @@
 /* Begin PBXFileReference section */
 		FE5630251C302F5A0094EC24 /* get_msp_telemetry */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = get_msp_telemetry; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5630281C302F5A0094EC24 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FE5630311C30316F0094EC24 /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		FE5630321C307EB40094EC24 /* serial.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = serial.c; sourceTree = "<group>"; };
+		FE5630331C307EB40094EC24 /* serial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = serial.h; sourceTree = "<group>"; };
+		FE5630351C308C860094EC24 /* msp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = msp.c; sourceTree = "<group>"; };
+		FE5630361C308C860094EC24 /* msp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msp.h; sourceTree = "<group>"; };
+		FE5630381C31E1640094EC24 /* example.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = example.xml; sourceTree = "<group>"; };
+		FEE13C921C4AE5DE0057FAC1 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = get_msp_telemetry/Makefile; sourceTree = "<group>"; };
+		FEE13C931C4AE5DE0057FAC1 /* configure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = configure; path = get_msp_telemetry/configure; sourceTree = "<group>"; };
+		FEE13C941C4AE5DE0057FAC1 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.in; path = get_msp_telemetry/Makefile.in; sourceTree = "<group>"; };
+		FEE13C951C4AE5DE0057FAC1 /* aclocal.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = aclocal.m4; path = get_msp_telemetry/aclocal.m4; sourceTree = "<group>"; };
+		FEE13C961C4AE5DE0057FAC1 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AUTHORS; path = get_msp_telemetry/AUTHORS; sourceTree = "<group>"; };
+		FEE13C971C4AE5DE0057FAC1 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ChangeLog; path = get_msp_telemetry/ChangeLog; sourceTree = "<group>"; };
+		FEE13C981C4AE5DE0057FAC1 /* NEWS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = NEWS; path = get_msp_telemetry/NEWS; sourceTree = "<group>"; };
+		FEE13C991C4AE5DE0057FAC1 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = get_msp_telemetry/README; sourceTree = "<group>"; };
+		FEE13C9A1C4AE5DE0057FAC1 /* configure.ac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = configure.ac; path = get_msp_telemetry/configure.ac; sourceTree = "<group>"; };
+		FEE13C9B1C4AE5DE0057FAC1 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.am; path = get_msp_telemetry/Makefile.am; sourceTree = "<group>"; };
+		FEE13C9C1C4AE5DE0057FAC1 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = COPYING; path = get_msp_telemetry/COPYING; sourceTree = "<group>"; };
+		FEE13C9D1C4AE5DE0057FAC1 /* INSTALL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = INSTALL; path = get_msp_telemetry/INSTALL; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +62,8 @@
 		FE56301C1C302F5A0094EC24 = {
 			isa = PBXGroup;
 			children = (
+				FEE13C911C4AE5410057FAC1 /* Build_files */,
+				FE5630381C31E1640094EC24 /* example.xml */,
 				FE5630271C302F5A0094EC24 /* get_msp_telemetry */,
 				FE5630261C302F5A0094EC24 /* Products */,
 			);
@@ -58,8 +81,32 @@
 			isa = PBXGroup;
 			children = (
 				FE5630281C302F5A0094EC24 /* main.c */,
+				FE5630351C308C860094EC24 /* msp.c */,
+				FE5630361C308C860094EC24 /* msp.h */,
+				FE5630311C30316F0094EC24 /* types.h */,
+				FE5630321C307EB40094EC24 /* serial.c */,
+				FE5630331C307EB40094EC24 /* serial.h */,
 			);
 			path = get_msp_telemetry;
+			sourceTree = "<group>";
+		};
+		FEE13C911C4AE5410057FAC1 /* Build_files */ = {
+			isa = PBXGroup;
+			children = (
+				FEE13C921C4AE5DE0057FAC1 /* Makefile */,
+				FEE13C931C4AE5DE0057FAC1 /* configure */,
+				FEE13C941C4AE5DE0057FAC1 /* Makefile.in */,
+				FEE13C951C4AE5DE0057FAC1 /* aclocal.m4 */,
+				FEE13C961C4AE5DE0057FAC1 /* AUTHORS */,
+				FEE13C971C4AE5DE0057FAC1 /* ChangeLog */,
+				FEE13C981C4AE5DE0057FAC1 /* NEWS */,
+				FEE13C991C4AE5DE0057FAC1 /* README */,
+				FEE13C9A1C4AE5DE0057FAC1 /* configure.ac */,
+				FEE13C9B1C4AE5DE0057FAC1 /* Makefile.am */,
+				FEE13C9C1C4AE5DE0057FAC1 /* COPYING */,
+				FEE13C9D1C4AE5DE0057FAC1 /* INSTALL */,
+			);
+			name = Build_files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE5630371C308C860094EC24 /* msp.c in Sources */,
 				FE5630291C302F5A0094EC24 /* main.c in Sources */,
+				FEE13C9E1C4AE5DE0057FAC1 /* Makefile in Sources */,
+				FE5630341C307EB40094EC24 /* serial.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +287,7 @@
 				FE56302E1C302F5A0094EC24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

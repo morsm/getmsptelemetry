@@ -1,0 +1,3 @@
+The .xcodeproj is just because I built the product on my Mac - wanted a GUI environment, rather than vi.
+
+Building is just ./configure followed by make. There is no make install target; just copy the resulting executables somewhere.
