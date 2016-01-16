@@ -1,0 +1,58 @@
+autoscan: warning: missing AC_CHECK_FUNCS([bzero]) wanted by: 
+	serial.c:40
+autoscan: warning: missing AC_CHECK_FUNCS([memset]) wanted by: 
+	main.c:166
+autoscan: warning: missing AC_CHECK_HEADERS([fcntl.h]) wanted by: 
+	serial.c:17
+autoscan: warning: missing AC_CHECK_HEADERS([termios.h]) wanted by: 
+	serial.c:18
+autoscan: warning: missing AC_CHECK_HEADERS([unistd.h]) wanted by: 
+	serial.c:14
+autoscan: warning: missing AC_TYPE_INT16_T wanted by: 
+	types.h:69
+	types.h:70
+	types.h:71
+	types.h:77
+autoscan: warning: missing AC_TYPE_INT32_T wanted by: 
+	types.h:76
+autoscan: warning: missing AC_TYPE_SIZE_T wanted by: 
+	serial.c:65
+	serial.c:81
+	serial.h:20
+	serial.h:21
+autoscan: warning: missing AC_TYPE_UINT16_T wanted by: 
+	main.c:21
+	main.c:21
+	main.c:21
+	types.h:29
+	types.h:30
+	types.h:35
+	types.h:36
+	types.h:41
+	types.h:42
+	types.h:43
+	types.h:44
+	types.h:45
+	types.h:46
+	types.h:55
+	types.h:56
+	types.h:57
+	types.h:62
+	types.h:63
+	types.h:83
+	types.h:84
+	types.h:85
+autoscan: warning: missing AC_TYPE_UINT32_T wanted by: 
+	main.c:192
+	main.c:193
+	types.h:53
+	types.h:54
+autoscan: warning: missing AC_TYPE_UINT8_T wanted by: 
+	main.c:21
+	types.h:51
+	types.h:52
+	types.h:64
+	types.h:82
+	msp.h:15
+	msp.c:13
+	msp.c:15
