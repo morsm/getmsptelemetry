@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE2FF68B1C4AF741003CD296 /* motorsrunning.c in Sources */ = {isa = PBXBuildFile; fileRef = FE2FF67D1C4AF4D2003CD296 /* motorsrunning.c */; };
+		FE2FF68C1C4AF924003CD296 /* msp.c in Sources */ = {isa = PBXBuildFile; fileRef = FE5630351C308C860094EC24 /* msp.c */; };
+		FE2FF68D1C4AF924003CD296 /* serial.c in Sources */ = {isa = PBXBuildFile; fileRef = FE5630321C307EB40094EC24 /* serial.c */; };
 		FE5630291C302F5A0094EC24 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FE5630281C302F5A0094EC24 /* main.c */; };
 		FE5630341C307EB40094EC24 /* serial.c in Sources */ = {isa = PBXBuildFile; fileRef = FE5630321C307EB40094EC24 /* serial.c */; };
 		FE5630371C308C860094EC24 /* msp.c in Sources */ = {isa = PBXBuildFile; fileRef = FE5630351C308C860094EC24 /* msp.c */; };
@@ -14,6 +17,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		FE2FF6821C4AF72C003CD296 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		FE5630231C302F5A0094EC24 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -26,6 +38,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FE2FF67D1C4AF4D2003CD296 /* motorsrunning.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = motorsrunning.c; sourceTree = "<group>"; };
+		FE2FF67E1C4AF4D2003CD296 /* motorsrunning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = motorsrunning.h; sourceTree = "<group>"; };
+		FE2FF6841C4AF72C003CD296 /* motorsrunning */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = motorsrunning; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5630251C302F5A0094EC24 /* get_msp_telemetry */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = get_msp_telemetry; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5630281C302F5A0094EC24 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FE5630311C30316F0094EC24 /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
@@ -49,6 +64,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FE2FF6811C4AF72C003CD296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE5630221C302F5A0094EC24 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				FE5630251C302F5A0094EC24 /* get_msp_telemetry */,
+				FE2FF6841C4AF72C003CD296 /* motorsrunning */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +109,8 @@
 				FE5630311C30316F0094EC24 /* types.h */,
 				FE5630321C307EB40094EC24 /* serial.c */,
 				FE5630331C307EB40094EC24 /* serial.h */,
+				FE2FF67D1C4AF4D2003CD296 /* motorsrunning.c */,
+				FE2FF67E1C4AF4D2003CD296 /* motorsrunning.h */,
 			);
 			path = get_msp_telemetry;
 			sourceTree = "<group>";
@@ -112,6 +137,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FE2FF6831C4AF72C003CD296 /* motorsrunning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE2FF6881C4AF72D003CD296 /* Build configuration list for PBXNativeTarget "motorsrunning" */;
+			buildPhases = (
+				FE2FF6801C4AF72C003CD296 /* Sources */,
+				FE2FF6811C4AF72C003CD296 /* Frameworks */,
+				FE2FF6821C4AF72C003CD296 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = motorsrunning;
+			productName = motorsrunning;
+			productReference = FE2FF6841C4AF72C003CD296 /* motorsrunning */;
+			productType = "com.apple.product-type.tool";
+		};
 		FE5630241C302F5A0094EC24 /* get_msp_telemetry */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE56302C1C302F5A0094EC24 /* Build configuration list for PBXNativeTarget "get_msp_telemetry" */;
@@ -138,6 +180,9 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Morse Digital Media";
 				TargetAttributes = {
+					FE2FF6831C4AF72C003CD296 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
 					FE5630241C302F5A0094EC24 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
@@ -156,11 +201,22 @@
 			projectRoot = "";
 			targets = (
 				FE5630241C302F5A0094EC24 /* get_msp_telemetry */,
+				FE2FF6831C4AF72C003CD296 /* motorsrunning */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FE2FF6801C4AF72C003CD296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2FF68C1C4AF924003CD296 /* msp.c in Sources */,
+				FE2FF68D1C4AF924003CD296 /* serial.c in Sources */,
+				FE2FF68B1C4AF741003CD296 /* motorsrunning.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE5630211C302F5A0094EC24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,6 +231,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		FE2FF6891C4AF72D003CD296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FE2FF68A1C4AF72D003CD296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		FE56302A1C302F5A0094EC24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -271,6 +341,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FE2FF6881C4AF72D003CD296 /* Build configuration list for PBXNativeTarget "motorsrunning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE2FF6891C4AF72D003CD296 /* Debug */,
+				FE2FF68A1C4AF72D003CD296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		FE5630201C302F5A0094EC24 /* Build configuration list for PBXProject "get_msp_telemetry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

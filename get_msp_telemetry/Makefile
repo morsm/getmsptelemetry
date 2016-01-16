@@ -49,7 +49,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-bin_PROGRAMS = getmsptelemetry$(EXEEXT)
+bin_PROGRAMS = getmsptelemetry$(EXEEXT) motorsrunning$(EXEEXT)
 subdir = .
 DIST_COMMON = README $(am__configure_deps) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in $(top_srcdir)/configure AUTHORS COPYING \
@@ -69,6 +69,10 @@ am_getmsptelemetry_OBJECTS = main.$(OBJEXT) serial.$(OBJEXT) \
 	msp.$(OBJEXT)
 getmsptelemetry_OBJECTS = $(am_getmsptelemetry_OBJECTS)
 getmsptelemetry_LDADD = $(LDADD)
+am_motorsrunning_OBJECTS = motorsrunning.$(OBJEXT) serial.$(OBJEXT) \
+	msp.$(OBJEXT)
+motorsrunning_OBJECTS = $(am_motorsrunning_OBJECTS)
+motorsrunning_LDADD = $(LDADD)
 DEFAULT_INCLUDES = -I.
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -77,8 +81,8 @@ COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
 	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
 CCLD = $(CC)
 LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
-SOURCES = $(getmsptelemetry_SOURCES)
-DIST_SOURCES = $(getmsptelemetry_SOURCES)
+SOURCES = $(getmsptelemetry_SOURCES) $(motorsrunning_SOURCES)
+DIST_SOURCES = $(getmsptelemetry_SOURCES) $(motorsrunning_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -185,6 +189,7 @@ top_build_prefix =
 top_builddir = .
 top_srcdir = .
 getmsptelemetry_SOURCES = main.c serial.c msp.c
+motorsrunning_SOURCES = motorsrunning.c serial.c msp.c
 all: all-am
 
 .SUFFIXES:
@@ -266,6 +271,9 @@ clean-binPROGRAMS:
 getmsptelemetry$(EXEEXT): $(getmsptelemetry_OBJECTS) $(getmsptelemetry_DEPENDENCIES) $(EXTRA_getmsptelemetry_DEPENDENCIES) 
 	@rm -f getmsptelemetry$(EXEEXT)
 	$(LINK) $(getmsptelemetry_OBJECTS) $(getmsptelemetry_LDADD) $(LIBS)
+motorsrunning$(EXEEXT): $(motorsrunning_OBJECTS) $(motorsrunning_DEPENDENCIES) $(EXTRA_motorsrunning_DEPENDENCIES) 
+	@rm -f motorsrunning$(EXEEXT)
+	$(LINK) $(motorsrunning_OBJECTS) $(motorsrunning_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -274,6 +282,7 @@ distclean-compile:
 	-rm -f *.tab.c
 
 include ./$(DEPDIR)/main.Po
+include ./$(DEPDIR)/motorsrunning.Po
 include ./$(DEPDIR)/msp.Po
 include ./$(DEPDIR)/serial.Po
 
