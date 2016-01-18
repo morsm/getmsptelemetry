@@ -49,6 +49,8 @@
 		FE5630351C308C860094EC24 /* msp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = msp.c; sourceTree = "<group>"; };
 		FE5630361C308C860094EC24 /* msp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msp.h; sourceTree = "<group>"; };
 		FE5630381C31E1640094EC24 /* example.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = example.xml; sourceTree = "<group>"; };
+		FE6ADE2B1C4D8CB000962AA1 /* morseflyer.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = morseflyer.sh; path = get_msp_telemetry/scripts/morseflyer.sh; sourceTree = "<group>"; };
+		FE6ADE2C1C4D8CB000962AA1 /* morseflyer_loop.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = morseflyer_loop.sh; path = get_msp_telemetry/scripts/morseflyer_loop.sh; sourceTree = "<group>"; };
 		FEE13C921C4AE5DE0057FAC1 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = get_msp_telemetry/Makefile; sourceTree = "<group>"; };
 		FEE13C931C4AE5DE0057FAC1 /* configure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = configure; path = get_msp_telemetry/configure; sourceTree = "<group>"; };
 		FEE13C941C4AE5DE0057FAC1 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.in; path = get_msp_telemetry/Makefile.in; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		FE56301C1C302F5A0094EC24 = {
 			isa = PBXGroup;
 			children = (
+				FE6ADE2A1C4D8C4800962AA1 /* Scripts */,
 				FEE13C911C4AE5410057FAC1 /* Build_files */,
 				FE5630381C31E1640094EC24 /* example.xml */,
 				FE5630271C302F5A0094EC24 /* get_msp_telemetry */,
@@ -113,6 +116,15 @@
 				FE2FF67E1C4AF4D2003CD296 /* motorsrunning.h */,
 			);
 			path = get_msp_telemetry;
+			sourceTree = "<group>";
+		};
+		FE6ADE2A1C4D8C4800962AA1 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				FE6ADE2B1C4D8CB000962AA1 /* morseflyer.sh */,
+				FE6ADE2C1C4D8CB000962AA1 /* morseflyer_loop.sh */,
+			);
+			name = Scripts;
 			sourceTree = "<group>";
 		};
 		FEE13C911C4AE5410057FAC1 /* Build_files */ = {
@@ -348,6 +360,7 @@
 				FE2FF68A1C4AF72D003CD296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE5630201C302F5A0094EC24 /* Build configuration list for PBXProject "get_msp_telemetry" */ = {
 			isa = XCConfigurationList;
