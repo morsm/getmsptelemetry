@@ -7,6 +7,7 @@ MOTOR_EXEC=/usr/local/bin/motorsrunning
 
 WWW=/var/www/html
 TELEMETRY_DIR=/var/telemetry
+WEB_AJAX_TRIGGER=$WWW/status_telemetry.txt
 MOTORS_FILE=$TELEMETRY_DIR/run/motors
 TELEMETRY_CURRENT=$TELEMETRY_DIR/run/current_telemetry
 
@@ -111,6 +112,8 @@ then
 	
 	# Write to web file
 	echo $TELEMETRY >$TELEMETRY_WEB_RECORD
+	# Update AJAX
+	echo -n "telemetry" >$WEB_AJAX_TRIGGER
 	
 	# If motors are running and there is a current telemetry record, append to that
 	if [ $MOTORS_ARE_RUNNING -eq 0 ] && [ -f $TELEMETRY_CURRENT ]

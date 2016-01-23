@@ -41,6 +41,12 @@
 		FE2FF67D1C4AF4D2003CD296 /* motorsrunning.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = motorsrunning.c; sourceTree = "<group>"; };
 		FE2FF67E1C4AF4D2003CD296 /* motorsrunning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = motorsrunning.h; sourceTree = "<group>"; };
 		FE2FF6841C4AF72C003CD296 /* motorsrunning */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = motorsrunning; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE35A9211C542C0600892290 /* index.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; name = index.php; path = get_msp_telemetry/Web/index.php; sourceTree = "<group>"; };
+		FE35A9221C542C0600892290 /* telemetry.xsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = telemetry.xsl; path = get_msp_telemetry/Web/telemetry.xsl; sourceTree = "<group>"; };
+		FE35A9231C542C0600892290 /* status_mjpeg.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; name = status_mjpeg.php; path = get_msp_telemetry/Web/status_mjpeg.php; sourceTree = "<group>"; };
+		FE35A9241C542C0600892290 /* style_minified.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style_minified.css; path = get_msp_telemetry/Web/style_minified.css; sourceTree = "<group>"; };
+		FE35A9251C542C1500892290 /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = script.js; path = get_msp_telemetry/Web/js/script.js; sourceTree = "<group>"; };
+		FE35A9261C542C1500892290 /* xslt.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = xslt.js; path = get_msp_telemetry/Web/js/xslt.js; sourceTree = "<group>"; };
 		FE5630251C302F5A0094EC24 /* get_msp_telemetry */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = get_msp_telemetry; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5630281C302F5A0094EC24 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FE5630311C30316F0094EC24 /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
@@ -83,9 +89,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE35A91F1C542B0400892290 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				FE35A9211C542C0600892290 /* index.php */,
+				FE35A9221C542C0600892290 /* telemetry.xsl */,
+				FE35A9231C542C0600892290 /* status_mjpeg.php */,
+				FE35A9241C542C0600892290 /* style_minified.css */,
+				FE35A9201C542B0D00892290 /* js */,
+			);
+			name = Web;
+			sourceTree = "<group>";
+		};
+		FE35A9201C542B0D00892290 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				FE35A9251C542C1500892290 /* script.js */,
+				FE35A9261C542C1500892290 /* xslt.js */,
+			);
+			name = js;
+			sourceTree = "<group>";
+		};
 		FE56301C1C302F5A0094EC24 = {
 			isa = PBXGroup;
 			children = (
+				FE35A91F1C542B0400892290 /* Web */,
 				FE6ADE2A1C4D8C4800962AA1 /* Scripts */,
 				FEE13C911C4AE5410057FAC1 /* Build_files */,
 				FE5630381C31E1640094EC24 /* example.xml */,
